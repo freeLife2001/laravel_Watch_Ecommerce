@@ -1,0 +1,2046 @@
+@charset "utf-8";
+
+/* CSS Document 
+Project Name: Bazaar - Responsive Ecommerce HTML5 Template
+Version:  1.0   
+Author Name: bdCoder
+
+*****=====***** TABLE OF CONTENT *****=====*****
+
+01. IMPORTED STYLE CSS
+02. GENERAL CSS
+        => Common CSS
+        => Form CSS
+        => Placeholder Color CSS
+        => BUtton CSS
+        => Background Over Layer CSS
+        => Default Title CSS
+        => Preloader CSS 
+        => Scrollup CSS
+        => Pagination CSS
+04. Header CSS
+        => Header Top CSS
+        => Navbar CSS
+        => NavBar Fixed CSS
+05. Slider CSS
+06. Product Carousel
+07. Discount CSS
+08. Separator CSS
+09. Men's Shopping CSS
+10. Women CSS
+11. Banner CSS
+12. Testimonial CSS
+13. Blog CSS
+        => Blog Sidebar
+        => Blog Single CSS
+14. Partner CSS
+15. Defult Page Title CSS
+16. Shop List CSS
+17. Shop Sidebar CSS
+18. About CSS
+19. Team CSS 
+20. Product Details CSS
+21. Product Discrtiption CSS
+22. Account CSS 
+23. Cart CSS
+        => shipping CSS
+24. Checkout CSS
+25. FAQ CSS
+26. Error CSS
+27. Contact CSS
+28. Footer CSS
+29. Copyright CSS
+
+
+
+
+
+*/
+
+/*****=====*****=====*****=====*****=====
+    01. IMPORTED STYLE CSS
+=====*****=====*****=====*****=====*****/
+
+/* GOOGLE FONTs */
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+
+/* OTHER IMPORTED CSS */
+@import "font-awesome.min.css";
+@import "icofont.css";
+@import "bootsnav.css";
+@import "zoomslider.css";
+@import "animations.css";
+@import "animate.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.css";
+@import "jquery-ui.css";
+
+
+/*****=====*****=====*****=====*****=====
+    02. General CSS 
+=====*****=====*****=====*****=====*****/
+
+body {
+    background: #ffffff;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #4c4c4c;
+    position: relative;
+}
+/* Common CSS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #333333;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    text-transform: capitalize;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Form CSS */
+
+.form-control {
+    resize: none;
+    height: 40px;
+    margin-bottom: 30px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.form-control:focus {
+    border-color: #a2a2a2;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+/* Placeholder Color CSS */
+::-webkit-input-placeholder {
+    color: #999999 !important;
+}
+::-moz-placeholder {
+    color: #999999 !important;
+}
+:-ms-input-placeholder {
+    color: #999999 !important;
+}
+:-moz-placeholder {
+    color: #999999 !important;
+}
+
+/* BUtton CSS */
+.my-btn {
+    background: #345E9D;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 25px;
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.my-btn:hover {
+    color: #ffffff;
+    background: #345E9D;
+    box-shadow: inset 0 0 0 5px #2C5086;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Background Over Layer CSS */
+.overlay-black {
+    position: relative;
+}
+.overlay-black:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.overlay-white {
+    position: relative;
+}
+.overlay-white:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Default Title CSS */
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+.section-title h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;    
+}
+.section-title h2 span {
+    color: #345E9D;
+}
+
+
+
+/* Preloader CSS */
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99999999;
+}
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../images/preloder.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+
+/* Scrollup CSS */
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    background-color: #345E9D;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.scrollup:hover {
+    color: #111111;
+}
+
+/* Pagination CSS Start */
+.page-pagination {
+    text-align: center;
+}
+.page-pagination .pagination {
+    margin: 30px 0 30px;
+}
+.page-pagination .pagination>li>a, 
+.page-pagination .pagination>li>span {
+    background: transparent;
+    color: #345E9D;
+}
+.page-pagination .pagination>li>a:hover {
+    color: #ffffff;
+    background: #345E9D;
+}
+.page-pagination-left {
+    text-align: left;
+}
+.page-pagination-right {
+    text-align: right;
+}
+
+/*--------------------------------
+    04. Header CSS Start
+----------------------------------*/
+.main-herader {
+    position: relative;
+    background: #ffffff;
+}
+
+/* Header Top CSS Start */
+.header-topbar {
+    background: #345E9D;
+}
+.header-topbar-col {
+    padding: 10px 0;
+}
+.header-topbar-col p {
+    color: #ffffff;
+    margin-top: 4px;
+}
+.header-topbar-col p i {
+    margin-right: 5px;
+    color: #ffffff;
+}
+.header-topbar-col p a {
+    color: #ffffff;
+}
+.header-topbar-col .dropdown-menu {
+    z-index: 9999999;
+}
+.topbar-account a {
+    color: #ffffff;
+}
+.topbar-account .dropdown {
+    margin-left: 20px;
+}
+.topbar-account .dropdown-menu {
+    min-width: 160px;
+}
+.topbar-account .pull-right>.dropdown-menu {
+    
+}
+.topbar-account .dropdown-menu>li>a {
+    text-align: right;
+}
+
+/* Navbar CSS start */
+nav.navbar .navbar-brand {
+    height: auto;
+}
+nav.navbar .navbar-brand img.logo{
+        width: 180px;
+        height: auto;
+}
+nav.navbar.bootsnav ul.nav li.active > a {
+    color: #345E9D;
+}
+nav.navbar.bootsnav ul.nav > li > a {
+    padding: 32px 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+nav.navbar.bootsnav ul.nav > li > a:hover {
+    color: #345E9D;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+    border-top: 3px solid #345E9D;
+}
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content 
+.content ul.menu-col li a {
+    text-transform: capitalize;
+}
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content 
+.content ul.menu-col li a:hover {
+    color: #345E9D;
+    font-weight: bold;
+}
+.badge {
+    background: #345E9D;
+}
+.attr-nav > ul > li.dropdown ul.dropdown-menu {
+    margin-top: -2px;
+}
+.col-menu .title {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* NavBar Fixed CSS */
+.affix {
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+    top: 0;
+    width: 100%;
+    z-index:999;
+    -webkit-box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 12px -10px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/*--------------------------------
+    05. Slider CSS Start
+----------------------------------*/
+#slider {
+    position: relative;  
+    overflow: hidden;
+    width: 100%;
+    min-height: 600px;
+    background-color: #999;
+}
+.zs-slide {
+    position: relative;
+}
+.zs-slide:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+}
+.slider-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+    text-align: center;
+}
+.slider-content h2 {
+    font-size: 45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.slider-content h2 span {
+    color: #345E9D;
+}
+.slider-content p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.quotes { 
+    display: none;
+}
+
+
+/*--------------------------------
+    06. Product Carousel CSS Start
+----------------------------------*/
+.product-carousel-area {
+    padding: 100px 0;
+}
+.product-carousel  h4 {
+    font-weight: 400;
+    font-size: 18px;
+    background: #dddddd;
+    padding: 5px 10px;
+}
+.product-carousel-col .owl-theme .owl-nav {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    margin-top: 0;
+}
+.product-carousel-col .owl-theme .owl-nav [class*='owl-'] {
+    background: none;
+    padding: 4px 15px;
+    font-size: 24px;
+    color: #666666;
+    border: 1px solid #666666;
+    border-radius: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.product-carousel-col .owl-theme .owl-nav [class*='owl-']:hover {
+    color: #f5f5f5;
+    background: #345E9D;
+    border-color: #345E9D;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+
+/*--------------------------------
+    07. Discount CSS Start
+----------------------------------*/
+.discount-section {
+    padding: 0 0 70px;
+}
+.discount-col {
+    margin-bottom: 30px;
+    position: relative;
+}
+.discount-col h2 {
+    font-size: 36px;   
+}
+.discount-col h2 span {
+    color: #345E9D;
+    font-size: 24px;
+}
+.discount-col {
+    position: relative;
+    overflow: hidden;
+}
+.discount-col img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    min-height: 262.5px;
+    object-fit: cover;
+}
+.discount-col:hover img {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari */
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.discount-col .discounted-price {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+.discount-col .discounted-price p {
+    color: #ffffff;
+}
+.discount-col .discounted-price p span {
+    font-size: 24px;
+}
+
+
+/*--------------------------------
+    08. Separator CSS Start
+----------------------------------*/
+.separator-section {
+    padding: 100px 0 20px;
+    background: #f5f5f5;
+}
+.separator-col {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 80px;
+}
+.separator-col i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 65px;
+    color: #345E9D;
+}
+.title-bottom-bdr {
+    width: 60px;
+    height: 2px;
+    background: #345E9D;
+    margin-bottom: 10px;
+}
+
+/*--------------------------------
+    09. Men's Shopping CSS Start
+----------------------------------*/
+.men-shopping {
+    padding: 100px 0 70px;
+}
+.shopping-col {
+    margin-bottom: 30px;
+}
+.product-img {
+    position: relative;
+}
+.product-img a img {
+    min-height: 262.5px;
+    max-height: 262.5px;
+    object-fit: cover;
+    width: 100%;
+}
+.new {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #345E9D;
+    padding: 0px 10px;
+}
+.new:after {
+    content: "";
+    width: 0;
+    height: 100%;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 8px solid #345E9D;
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+.new p {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.product-over-box {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    margin-left: -40%;
+    text-align: center;
+    padding: 10px 10px 8px;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.shopping-col:hover .product-over-box {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.product-over-box a i {
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.product-over-box a i:hover {
+    color: #345E9D;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.product-info {
+    border: 1px solid #dedede;
+    border-top: none;
+    padding: 20px 15px;
+}
+.product-info h4{
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+}
+.product-info h4 a {
+    color: #333333;
+}
+.product-info p {
+    color: #345E9D;
+    font-weight: bold;
+    font-size: 16px;
+}
+.product-info p del {
+    color: #999999;
+    font-size: 13px;
+}
+.soldout {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/*--------------------------------
+    10. Women CSS Start
+----------------------------------*/
+.women-shopping {
+    padding: 0 0 70px;
+}
+.women-shopping-inner {
+    padding: 100px 0 70px;
+}
+
+
+
+/*--------------------------------
+    11. Banner CSS Start
+----------------------------------*/
+.banner-area {
+    
+}
+.banner-col {
+    position: relative;
+    background: #345E9D;
+    overflow: hidden;
+}
+.banner-col .left-col {
+    width: 60%;
+    float: left;
+    margin-left: -5%;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 50px 60px 50px 110px;
+    -ms-transform: skew(-20deg); /* IE 9 */
+    -webkit-transform: skew(-20deg); /* Safari */
+    transform: skew(-20deg); /* Standard syntax */
+}
+.banner-col .left-col h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+    margin-bottom: 0;
+    -ms-transform: skew(20deg); /* IE 9 */
+    -webkit-transform: skew(20deg); /* Safari */
+    transform: skew(20deg); /* Standard syntax */
+    font-size: 46px;
+    font-weight: 400;
+}
+.banner-col .left-col h2 span {
+    font-size: 52px;
+    text-transform: uppercase;
+}
+.banner-col .right-col {
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding: 60px 0 60px 48px;
+}
+.banner-col .right-col .my-btn {
+    border: 1px solid #ffffff;
+}
+.banner-col .right-col .my-btn:hover {
+    box-shadow: inset 0 0 0 5px #2C5086;
+}
+
+
+
+/*--------------------------------
+    12. Testimonial CSS Start
+----------------------------------*/
+.testimonial-area {
+    padding: 100px 0;
+}
+.testimonial-item {
+    background: transparent;
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+.tistimonial-content {
+    background: #f5f5f5;
+    position: relative;
+    padding: 50px 30px;
+}
+.tistimonial-content h4 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.tistimonial-content span {
+    color: #345E9D;
+    font-size: 12px;
+}
+.tistimonial-content img {
+    width: 80px !important;
+    height: 80px !important;
+    border: 5px solid #f5f5f5;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    margin-left: -40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+/*--------------------------------
+    13. Blog CSS Start
+----------------------------------*/
+.blog-area {
+    padding: 0 0 70px;
+}
+.blog-col {
+    margin-bottom: 30px;
+}
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+.blog-img img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-col:hover .blog-img img {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.blog-img .date {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 999;
+    background: #345E9D;
+    padding: 10px 20px;
+    text-align: center;
+}
+.blog-img .date p {
+    color: #ffffff;
+    line-height: 20px;
+}
+.overlay-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.blog-col:hover .overlay-top {
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.blog-info-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgba(1, 1, 1, .5);
+    padding: 5px 10px;
+    text-align: center;
+}
+.blog-info-box ul li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.blog-info-box ul li i {
+    color: #ffffff;
+    margin-right: 5px;
+}
+.blog-info-box ul li a {
+    color: #e2e2e2;
+}
+.blog-info-box ul li a:hover {
+    color: #ababab;
+}
+.blog-col h3 {
+    margin-top: 20px;
+}
+.blog-col h3 a {
+    color: #333333;
+}
+
+.blog-area-inner {
+    padding: 100px 0 70px;
+}
+.blog-info-box-two {
+    width: 100%;
+}
+
+/* Blog Sidebar */
+.blog-sidebar-col {
+    text-align: left;
+}
+.sidebar-search-box {
+    margin-bottom: 50px;
+}
+.sidebar-search-box .input-group .form-control {
+    height: 45px;
+    border-color: #345E9D;
+}
+.sidebar-search-box .input-group-btn .btn {
+    height: 45px;
+    width: 60px;
+    background: #345E9D;
+}
+.sidebar-search-box .input-group-btn .btn i {
+    font-size: 22px;
+    color: #ffffff;
+}
+.categories {
+    margin-bottom: 50px;
+}
+.sidebar-title h3 {
+    border-bottom: 1px dashed #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+.categories ul li {
+    margin-bottom: 10px;
+}
+.categories ul li a {
+    color: #111111;
+    text-transform: capitalize;
+}
+.categories ul li a:hover {
+    color: #345E9D;
+}
+.sidebar-post {
+    margin-bottom: 50px;
+}
+.sidebar-post ul li {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 50px;
+}
+.sidebar-post ul li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+}
+.sidebar-post ul li h4 {
+    margin-bottom: 0;
+}
+.sidebar-tags {
+    margin-bottom: 0;
+}
+.sidebar-tags ul li {
+    border: 1px solid #dddddd;
+    margin-bottom: 22px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.sidebar-tags ul li a {
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #111111;
+    text-transform: capitalize;
+}
+.sidebar-tags ul li a:hover {
+    background: #345E9D;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* Blog Single CSS */
+.blog-single-section {
+    padding: 100px 0 70px;
+}
+.blog-col.blog-single-col:hover .blog-img img {
+    -ms-transform: scale(1); 
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.blog-col.blog-single-col:hover .overlay-top {
+    display: none;
+}
+.blog-col.blog-single-col .blog-info-box {
+    text-align: left;
+    padding: 10px 20px;
+}
+.blog-form-area h3 {
+    margin-bottom: 30px;
+}
+.blog-form-area h3 a {
+    color: #111111;
+}
+.blog-commment-item {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 50px;
+}
+.blog-commment-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.blog-commment-item h4 {
+    margin-bottom: 10px;
+}
+.middele-comment {
+    margin-left: 60px;
+}
+
+.form-field .btn {
+    border: none;
+    border-radius: 0;
+    background: #345E9D;
+    color: #ffffff;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.form-field .btn:hover {
+    background: #111111;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+/*--------------------------------
+    14. Partner CSS Start
+----------------------------------*/
+.partner-area {
+    padding: 100px 0 70px;
+    background: #f5f5f5;
+}
+.partner-logo {
+    margin-bottom: 30px;
+    display: block;
+    float: none;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.partner-logo:hover {
+    border-color: #345E9D;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari */
+    transform: scale(1.1); /* Standard syntax */
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.partner-logo img {
+    width: 160px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+/*--------------------------------
+    15. Defult Page Title CSS Start
+----------------------------------*/
+.defult-page-title {
+    padding: 80px 0;
+    text-align: center;
+    background: url(../images/bg/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-title-box {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.3);
+    padding: 50px 80px;
+    display: inline-block;
+}
+.page-title-box h2 {
+    font-size: 36px;
+    color: #ffffff;
+}
+.page-title-box p {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.page-title-box p a {
+    color: #dddddd;
+}
+.page-title-box p a:hover {
+    color: #999999;
+}
+
+
+/*--------------------------------
+    16. Shop List CSS Start
+----------------------------------*/
+.shop-list-area {
+    padding: 100px 0 50px;
+}
+.shop-list-col {
+    margin-bottom: 50px;
+}
+.shop-list-col h4 a {
+    color: #333333;
+}
+.star-icons {
+    margin-bottom: 10px;
+}
+.star-icons span {
+    margin-left: 10px;
+    color: #345E9D;
+}
+.shop-list-col .price {
+    color: #345E9D;
+    font-weight: bold;
+}
+.shop-list-col .price del {
+    font-size: 16px;
+    color: #666666;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+/*--------------------------------
+    17. Shop Sidebar CSS Start
+----------------------------------*/
+.shopping-sidebar {
+    margin-bottom: 30px;
+}
+.sidebar-widget {
+    margin-bottom: 50px;
+}
+.shop-sidebar-title {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dddddd;
+}
+.shop-sidebar-title h3 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.shop-categories .panel-group .panel {
+    border-radius: 0;
+}   
+.shop-categories .panel-body li a {
+    color: #333333;
+}
+.shop-categories .panel-body li a:hover {
+    padding-left: 5px;
+    color: #345E9D;
+}
+.priceing-range .ui-widget.ui-widget-content {
+    margin-top: 10px;
+}
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, html .ui-button.ui-state-disabled:hover, 
+html .ui-button.ui-state-disabled:active {
+    border-radius: 50%;
+    background: #345E9D;
+}
+.priceing-range .ui-slider-horizontal .ui-slider-range {
+    background: #000000;
+}
+.filter-color {
+
+}
+.filter-color .color-item {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.color-select-1 {
+    background: #000000;
+}
+.color-select-2 {
+    background: #3F51B5;
+}
+.color-select-3 {
+    background: #673AB7;
+}
+.color-select-4 {
+    background: #2196F3;
+}
+.color-select-5 {
+    background: #F44336;
+}
+.color-select-6 {
+    background: #E91E63;
+}
+.color-select-7 {
+    background: #009688;
+}
+.color-select-8 {
+    background: #4CAF50;
+}
+.color-select-9 {
+    background: #8BC34A;
+}
+.color-select-10 {
+    background: #CDDC39;
+}
+.color-select-11 {
+    background: #FFEB3B;
+}
+.color-select-12 {
+    background: #607D8B;
+}
+.filter-brands ul li a {
+    color: #333333;
+}
+.filter-brands ul li a:hover {
+    padding-left: 5px;
+    color: #345E9D;
+}
+.popular-product ul li {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 50px;
+}
+.popular-product ul li a img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.popular-product ul li p a {
+    color: #333333;
+}
+
+
+
+
+/*--------------------------------
+    18. About CSS Start
+----------------------------------*/
+.about-area {
+    padding: 100px 0 70px;
+}
+.about-col {
+    margin-bottom: 30px;
+}
+.about-col h2 span {
+    color: #345E9D;
+}
+
+
+/*--------------------------------
+    19. Team CSS Start
+----------------------------------*/
+.team-area {
+    padding: 0 0 70px;
+}
+.team-col {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.team-socila {
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    width: 100%;
+    padding: 10px 10px;
+    background: rgba(52, 94, 157, 0.8);
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.team-col:hover .team-socila {
+    bottom: 70px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.team-socila a i {
+    color: #ffffff;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.team-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 10px;
+    z-index: 999;
+    text-align: center;
+    -ms-transform: scale(0); 
+    -webkit-transform: scale(0); 
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.team-col:hover .team-info {
+    -ms-transform: scale(1); 
+    -webkit-transform: scale(1); 
+    transform: scale(1);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.team-info h4 {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.team-info p {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+
+/*--------------------------------
+    20. Product Details CSS Start
+----------------------------------*/
+.product-details-area {
+    padding: 100px 0 70px;
+}
+.product-details-col {
+    margin-bottom: 30px;
+}
+.my-product-carousel .nav-pills>li>a {
+    border-radius: 0;
+    padding: 0;
+}
+.my-product-carousel .nav-pills>li.active>a {
+    background: transparent;
+}
+.review {
+    margin-bottom: 20px;
+}
+.review a {
+    margin-left: 10px;
+    color: #345E9D;
+}
+.product-details-col h2 del {
+    font-size: 18px;
+}
+.select-color {
+    margin-top: 20px;
+}
+.select-color .color-circle {
+    width: 30px;
+    height: 30px;
+    background: #000000;
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.select-color .color1 {
+    background: #000000;
+}
+.select-color .color2 {
+    background: #345E9D;
+}
+.select-color .color3 {
+    background: #E91E63;
+}
+.select-color .color4 {
+    background: #7B1FA2;
+}
+.select-color .color5 {
+    background: #2E7D32;
+}
+.select-size {
+    margin-top: 20px;
+}
+.product-action {
+    margin-top: 50px;
+}
+.product-action a {
+    padding: 10px 20px;
+    border: 1px solid #999999;
+    color: #666666;
+    margin-right: 10px;
+}
+.product-action a i {
+    margin-right: 5px;
+}
+.product-action a:hover {
+    background: #345E9D;
+    border-color: #345E9D;
+    color: #ffffff;
+}
+
+
+/*--------------------------------
+    21. Product Discrtiption CSS Start
+----------------------------------*/
+.product-discrtiption-area {
+    padding: 0 0 100px;
+}
+.product-discrtiption-col .nav-tabs {
+    border-bottom: none;
+}
+.product-discrtiption-col .nav-tabs>li.active>a, 
+.product-discrtiption-col .nav-tabs>li.active>a:focus, 
+.product-discrtiption-col .nav-tabs>li.active>a:hover {
+    color: #ffffff;
+    background: #345E9D;
+}
+.product-discrtiption-col .nav-tabs>li>a {
+    border-radius: 0;
+    text-transform: capitalize;
+    color: #333333;
+    background: #f5f5f5;
+}
+.product-discrtiption-col .nav-tabs>li>a:hover {
+    color: #ffffff;
+    background: #345E9D;
+}
+.product-discrtiption-col .tab-content {
+    padding: 30px 30px 30px 30px;
+    background: #f5f5f5;
+    border-top: 0;
+}
+.product-discrtiption-col .tab-content ul {
+    margin-top: 30px;
+}
+.product-discrtiption-col .tab-content ul li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.product-discrtiption-col .tab-content ul li i {
+    margin-right: 5px;
+}
+.reviews-item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 30px;
+}
+.reviews-item img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.reviews-item h4 {
+    margin-bottom: 0;
+}
+.reviews-item p {
+    margin-top: 10px;
+}
+
+.related-products-area {
+    padding: 0 0 70px;
+    text-align: center;
+}
+.related-products-area h2 {
+    margin-bottom: 30px;
+}
+
+
+
+/*--------------------------------
+    22. Account CSS Start
+----------------------------------*/
+.account-area {
+    padding: 100px 0 100px;
+}
+.account-col .nav-tabs {
+    text-align: center;
+}
+.account-col .nav-tabs>li {
+    float: none;
+    display: inline-block;
+}
+.account-col .tab-content {
+    border: 1px solid #dddddd;
+    border-top: none;
+    padding: 30px 30px;
+}
+
+
+/*--------------------------------
+    23. Cart CSS Start
+----------------------------------*/
+.cart-area {
+    padding: 100px 0;
+}
+.product-thumb {
+    position: relative;
+    padding-left: 100px;
+}
+.product-thumb img {
+    position: absolute;
+    left: 0;
+    top: -45px;
+    width: 80px;
+    height: auto;
+}
+.product-thumb a {
+    color: #333333;
+}
+
+.cart-col tbody tr td {
+    padding: 70px 0;
+}
+.quantity-numbar a {
+    padding: 5px 10px;
+    background: #f5f5f5;
+    font-size: 20px;
+    line-height: 24px;
+}
+.quantity-numbar span {
+    background: #345E9D;
+    color: #ffffff;
+    width: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 5px 10px;
+}
+/* Copuon CSS Start */
+.coupon-area {
+    padding: 50px 0 30px;
+    background: #f5f5f5;
+}
+.coupon-col {
+    margin-bottom: 20px;
+}
+.coupon-col .form-group .form-control {
+    margin-bottom: 0;
+    padding: 10px 20px;
+    height: 40px;
+}
+.coupon-col .btn-default {
+    height: 40px;
+    border-radius: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.coupon-col .btn-default:hover  {
+    background: #345E9D;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.coupon-col a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    margin-top: 10px;
+}
+.coupon-col a:hover {
+    text-decoration: underline;
+}
+
+/* shipping CSS Start */
+.shipping-address-area {
+    padding: 100px 0 70px;
+}
+.shipping-col {
+    margin-bottom: 30px;
+}
+.shipping-address-area h3 {
+    margin-bottom: 30px;
+}
+.shipping-col select {
+    width: 100%;
+    height: 40px;
+}
+.shipping-col .btn-default {
+    height: 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    line-height: 26px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.shipping-col .btn-default:hover {
+    color: #ffffff;
+    background: #345E9D;
+    border-color: #345E9D;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.shipping-col hr {
+    border-color: #cabfbf;
+}
+.shipping-col ul {
+    margin-bottom: 20px;
+}
+.shipping-col ul li:last-child {
+    border-top: 1px solid #cabfbf;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+
+/*--------------------------------
+    24. Checkout CSS Start
+----------------------------------*/
+.checkout-area {
+    padding: 100px 0 70px;
+}
+.checkout-col {
+    margin-bottom: 30px;
+}
+.billing-details {
+    padding: 50px 30px;
+    background: #f5f5f5;
+}
+.billing-details .form-control {
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    background: transparent;
+    padding-left: 0;
+}
+.billing-details a {
+    color: #333333;
+}
+.order-col {
+    padding: 50px 30px;
+    background: #f5f5f5;
+}
+.order-col ul {
+    margin-top: 20px;
+}
+.order-col ul li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+
+}
+.order-col ul hr {
+    border-color: #cccccc;
+}
+.order-col ul li:last-child strong {
+    color: #345E9D;
+}
+.order-col a img {
+    width: 45px;
+    display: inline-block;
+}
+.list-border {
+    border-top: 1px solid #cccccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+/*--------------------------------
+    25. FAQ CSS Start
+----------------------------------*/
+.faq-area {
+    padding: 100px 0;
+}
+.panel-heading .accordion-toggle:after {
+    content: "\f106";
+    font-family: FontAwesome;
+    float: right;
+    font-size: 20px;
+    color: #333333;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\f107";
+}
+.faq-col h1 {
+    margin-bottom: 30px;
+}
+.faq-col .panel-title {
+    font-size: 18px;
+}
+
+
+
+/*--------------------------------
+    26. Error CSS Start
+----------------------------------*/
+.error-area {
+    padding: 100px 0 70px;
+}
+.error-col {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.error-col h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.error-col h1 span {
+    font-size: 100px;
+    color: #345E9D;
+}
+.error-col img {
+    margin: 0 auto;
+}
+.error-col h4 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.error-col h4 a {
+    color: #111111;
+}
+.error-col h4 a:hover {
+    color: #345E9D;
+    text-decoration: underline;
+}
+
+
+
+
+/*--------------------------------
+    27. Contact CSS Start
+----------------------------------*/
+.contact-area {
+    padding: 100px 0 100px;
+}
+.contact-col {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contact-infobox {
+    border: 1px solid #dcdcdc;
+    padding: 50px 30px 30px;
+    position: relative;
+}
+.contact-infobox i {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    border: 3px solid #dcdcdc;
+    background: #ffffff;
+    color: #345E9D;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; 
+}
+.contact-infobox:hover i {
+    background: #345E9D;
+    color: #ffffff;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; 
+}
+.contact-form-row .contact-col {
+    margin-bottom: 0;
+}
+.contact-form-row .contact-col .form-control {
+    height: 50px;
+}
+.contact-textarea textarea {
+    height: 100% !important;
+}
+
+
+/*--------------------------------
+    28. Footer CSS Start
+----------------------------------*/
+.main-footer {
+    background: #111111;
+    padding: 80px 0 80px;
+}
+.footer-col {
+    padding-bottom: 30px;
+}
+.footer-col h3 {
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.footer-col h3 span {
+    color: #345E9D;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.footer-col p {
+    color: #d0d0d0;
+}
+.footer-col .top-para {
+    margin-bottom: 20px;
+}
+.footer-col ul li {
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #353535;
+}
+.footer-col ul li:last-child {
+    border-bottom: none;
+}
+.footer-col ul li a {
+    display: block;
+    color: #d0d0d0;
+}
+.footer-col ul li a:hover {
+    color: #345E9D;
+}
+.footer-subscribe-col p {
+    margin-bottom: 20px;
+}
+.footer-subscribe-col .form-control {
+    height: 45px;
+}
+.footer-subscribe-col .btn {
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0;
+    color: #ffffff;
+    background: #345E9D;
+}
+.footer-subscribe-col h4 {
+    color: #ffffff;
+    margin-top: 20px;
+}
+.footer-subscribe-col img {
+    width: 45px;
+    display: inline-block;
+}
+
+
+/*--------------------------------
+    29. Copyright CSS Start
+----------------------------------*/
+.copyright-bar {
+    padding: 20px 0;
+    background: #000000;
+}
+.footer-sociai-group {
+    margin-bottom: 10px;
+}
+.footer-sociai-group a i {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    color: #ffffff;
+    background: rgba(27, 27, 27, 0.75);
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.footer-sociai-group a i:hover {
+    color: #ffffff;
+    background: #345E9D;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.copyright-col p {
+    color: #bdbcbc;
+}
+.copyright-col p a {
+    color: #ffffff;
+}
+
+/*--------------------------------
+    Demo Page CSS Start
+----------------------------------*/
+.demo-page-header {
+    padding: 200px 0;
+    background: #111111;
+    background-image: url(../images/demo/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header-content {
+    text-align: center;
+}
+.header-content h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.header-content h1 span {
+    color: #345E9D;
+    font-size: 50px;
+}
+.header-content .btn {
+    font-style: 16px;
+    background: #345E9D;
+    border: none;
+    padding: 18px 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.demo-page-features {
+    padding: 100px 0 70px;
+    background: #f5f5f5;
+}
+.demo-page-features h2 {
+    font-size: 45px;
+    display: inline-block;
+    border-bottom: 3px solid #345E9D;
+    margin-bottom: 60px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+.demo-page-features-col {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.demo-page-features-col h4 {
+    padding: 20px 20px;
+    background: #e4e4e4; 
+    border-top: 2px solid #345E9D;
+}
+.demo-content-area {
+    padding: 100px 0 100px;
+}
+.demo-content-col {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.demo-content-col h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #111111;
+}
+.demo-content-col h2 a {
+    color: #111111;
+}
+.warning{
+    color: red;
+}
+.owl-carousel .owl-item img{
+    min-height: 204px;
+    max-height: 204px;
+    width: 100%;
+    object-fit: cover;
+}
