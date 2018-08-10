@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-mkhn
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('tin-tuc', 'HomeController@blog')->name('home.blog');
 Route::get('chi-tiet-san-pham/{id}-{slug}.html', 'HomeController@view')->name('home.view');
